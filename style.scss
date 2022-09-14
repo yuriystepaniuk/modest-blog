@@ -3,10 +3,17 @@
 
 * {
   box-sizing: border-box;
+}
+
+body {
   margin: 0;
 }
 
 @media (max-width: 768px) {
+  .container {
+    width: 768px !important;
+  }
+
   header .col-2 {
     display: none;
   }
@@ -22,13 +29,35 @@
   }
 
   .navigation ul {
-    max-width: 400px;
-    margin: 0 !important;
     overflow-x: scroll;
   }
 
   .slider {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
     .col-7 {
+      justify-content: flex-start !important;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      margin-bottom: 30px;
+      width: 90% !important;
+    }
+  }
+  .block-first {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    .display-flex {
+      flex-direction: column;
+    }
+    .col-7 {
+      width: 95% !important;
+      justify-content: flex-start !important;
+      height: max-content !important;
+    }
+
+    .col-5 {
+      padding-top: 0 !important;
+      width: 95% !important;
       justify-content: flex-start !important;
     }
   }
@@ -63,6 +92,7 @@
 
 header {
   background-color: #1d2126;
+  // width: 100vh;
   .box {
     @include display-flex;
     height: 80px;
@@ -150,13 +180,15 @@ header {
 .slider {
   background-image: url(images/slider-bg.png);
   background-repeat: no-repeat;
-  height: 100%;
-  width: auto;
-  background-size: 100%;
+  // height: 100%;
+  // width: auto;
+  background-size: cover;
   display: block;
   .col-7 {
     display: flex;
-    height: 660px;
+    // height: 660px;
+    padding-top: 200px;
+    padding-bottom: 250px;
     flex-direction: column;
     justify-content: center;
   }
@@ -164,6 +196,7 @@ header {
 
 .slider-button {
   @include display-flex;
+  margin-bottom: 30px;
   justify-content: flex-start;
   :hover {
     background-color: #23b7a4;
@@ -202,16 +235,22 @@ header {
 }
 
 .block-first {
+  margin: unset;
   .col-7 {
     height: 612px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-start;
   }
+  p {
+    font-family: "Open Sans";
+    color: #abadaf;
+  }
   .social {
+    margin-top: 55px;
+    margin-bottom: 100px;
     display: flex;
-
     [class*="social-"] {
       display: block;
       background-position: center;
@@ -238,6 +277,46 @@ header {
     }
     .social-5 {
       background-image: url(images/be-sm.png);
+    }
+  }
+  .col-5 {
+    padding-top: 30px;
+    font-family: "Open Sans";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+    span {
+      display: block;
+      background-color: #23b7a4;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      color: white;
+      line-height: 50px;
+      float: left;
+    }
+    > div {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: stretch;
+      justify-content: flex-start;
+      align-items: flex-start;
+      h3 {
+        margin-left: 20px;
+        margin-top: -5px;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #292f36;
+        margin-bottom: 5px;
+      }
+      p {
+        margin-left: 20px;
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
     }
   }
 }

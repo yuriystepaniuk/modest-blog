@@ -4,25 +4,22 @@
 
 .h2 {
   p {
-    font-size: 42px;
+    font-size: 36px;
     text-transform: uppercase;
     text-align: top;
     font-family: "Quattrocento Sans";
     font-weight: 400;
-    color: #292f36;
+    color: #292f36 !important;
     display: inline-block;
   }
   span {
     display: inline-block;
     vertical-align: middle;
     position: relative;
-    bottom: 5px;
+    bottom: 3px;
     width: 10px;
     height: 35px;
     background-color: #c8cdd0;
   }
 }
 
-p {
-  margin-bottom: 1em;
-}

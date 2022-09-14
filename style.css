@@ -4,34 +4,36 @@
 }
 
 .h2 p {
-  font-size: 42px;
+  font-size: 36px;
   text-transform: uppercase;
   text-align: top;
   font-family: "Quattrocento Sans";
   font-weight: 400;
-  color: #292f36;
+  color: #292f36 !important;
   display: inline-block;
 }
 .h2 span {
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  bottom: 5px;
+  bottom: 3px;
   width: 10px;
   height: 35px;
   background-color: #c8cdd0;
 }
 
-p {
-  margin-bottom: 1em;
-}
-
 * {
   box-sizing: border-box;
+}
+
+body {
   margin: 0;
 }
 
 @media (max-width: 768px) {
+  .container {
+    width: 768px !important;
+  }
   header .col-2 {
     display: none;
   }
@@ -44,11 +46,36 @@ p {
     margin-left: 15px;
   }
   .navigation ul {
-    max-width: 400px;
-    margin: 0 !important;
     overflow-x: scroll;
   }
+  .slider {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
   .slider .col-7 {
+    justify-content: flex-start !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 30px;
+    width: 90% !important;
+  }
+  .block-first {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .block-first .display-flex {
+    flex-direction: column;
+  }
+  .block-first .col-7 {
+    width: 95% !important;
+    justify-content: flex-start !important;
+    height: -webkit-max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
+  }
+  .block-first .col-5 {
+    padding-top: 0 !important;
+    width: 95% !important;
     justify-content: flex-start !important;
   }
 }
@@ -184,14 +211,13 @@ header .box {
 .slider {
   background-image: url(images/slider-bg.png);
   background-repeat: no-repeat;
-  height: 100%;
-  width: auto;
-  background-size: 100%;
+  background-size: cover;
   display: block;
 }
 .slider .col-7 {
   display: flex;
-  height: 660px;
+  padding-top: 200px;
+  padding-bottom: 250px;
   flex-direction: column;
   justify-content: center;
 }
@@ -200,6 +226,7 @@ header .box {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
   justify-content: flex-start;
 }
 .slider-button :hover {
@@ -237,14 +264,23 @@ header .box {
   margin-bottom: 40px;
 }
 
+.block-first {
+  margin: unset;
+}
 .block-first .col-7 {
   height: 612px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: flex-start;
 }
+.block-first p {
+  font-family: "Open Sans";
+  color: #abadaf;
+}
 .block-first .social {
+  margin-top: 55px;
+  margin-bottom: 100px;
   display: flex;
 }
 .block-first .social [class*=social-] {
@@ -273,4 +309,44 @@ header .box {
 }
 .block-first .social .social-5 {
   background-image: url(images/be-sm.png);
+}
+.block-first .col-5 {
+  padding-top: 30px;
+  font-family: "Open Sans";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 30px;
+}
+.block-first .col-5 span {
+  display: block;
+  background-color: #23b7a4;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  line-height: 50px;
+  float: left;
+}
+.block-first .col-5 > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.block-first .col-5 > div h3 {
+  margin-left: 20px;
+  margin-top: -5px;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #292f36;
+  margin-bottom: 5px;
+}
+.block-first .col-5 > div p {
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 5px;
 }/*# sourceMappingURL=style.css.map */
