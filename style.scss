@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import "_mixin";
+
+@media (max-width: 768px) {
+  header .col-2 {
+    display: none;
+  }
+  header .box {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .logo {
+    margin-left: 15px;
+  }
+
+  .navigation ul {
+    max-width: 400px;
+    margin: 0 !important;
+    overflow-x: scroll;
+  }
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: block;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+header {
+  background-color: #1d2126;
+  .box {
+    @include display-flex;
+    height: 80px;
+  }
+}
+
+[class*="col-"] {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.navigation ul {
+  @include display-flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.navigation li {
+  margin: 0 5px;
+  padding: 5px 10px;
+  list-style: none;
+  color: #a4aead;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  border: 2px solid #1d2126;
+  border-radius: 5px;
+}
+
+.navigation a {
+  display: block;
+  text-decoration: none;
+}
+
+.navigation li:active {
+  border: 2px solid #23b7a4 !important;
+  color: #23b7a4;
+}
+
+.navigation li:hover {
+  border: 2px solid #585d64;
+  cursor: pointer;
+}
+
+.search {
+  height: 30px;
+  @include display-flex;
+  justify-content: flex-end;
+  border: 1px solid #585d64;
+}
+
+.search > input {
+  display: inline-block;
+  padding: 5px 0px;
+  outline: none;
+  border: none;
+  background: none;
+  vertical-align: text-bottom;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  color: #a4aead;
+  max-width: 135px;
+  text-transform: uppercase;
+}
+
+.search > input::placeholder {
+  color: #a4aead;
+  text-transform: uppercase;
+}
+
+.search button {
+  background-color: #1d2126;
+  background-image: url(images/icon-search-white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 25px;
+  border: none;
+}
