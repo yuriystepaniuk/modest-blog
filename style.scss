@@ -14,15 +14,19 @@ body {
     width: auto !important;
   }
 
-  header .col-2 {
-    display: none;
+  header {
+    .col-2 {
+      display: none;
+    }
   }
 
-  header .row {
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: flex-start !important;
-    width: calc(100% - 30px);
+  header {
+    .row {
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-start !important;
+      justify-content: left !important;
+    }
   }
 
   .logo {
@@ -93,6 +97,7 @@ body {
 .row {
   margin-left: -15px;
   margin-right: -15px;
+  width: calc(100% - 30px);
 }
 
 header {
@@ -112,8 +117,8 @@ header {
   @include display-flex;
   justify-content: flex-start;
   padding: 0;
-  margin: 0 auto;
-  }
+  margin: 0;
+}
 
 .navigation li {
   margin: 0 5px;
