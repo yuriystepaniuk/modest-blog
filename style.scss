@@ -36,10 +36,10 @@ body {
     padding-left: 15px !important;
     padding-right: 15px !important;
     .col-7 {
+      width: 40%;
       justify-content: flex-start !important;
       padding-top: 0 !important;
       padding-bottom: 0 !important;
-      width: min-content;
     }
   }
   .block-first {
@@ -51,7 +51,7 @@ body {
     .col-7 {
       justify-content: flex-start !important;
       height: max-content !important;
-      width: min-content;
+      width: 40%;
     }
 
     .col-5 {
@@ -226,7 +226,7 @@ header {
   font-family: "Open Sans";
   font-size: 16px;
   margin-bottom: 40px;
-  }
+}
 
 .block-first {
   margin: unset;

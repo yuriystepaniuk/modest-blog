@@ -53,12 +53,10 @@ body {
     padding-right: 15px !important;
   }
   .slider .col-7 {
+    width: 40%;
     justify-content: flex-start !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
   }
   .block-first {
     padding-left: 15px !important;
@@ -72,9 +70,7 @@ body {
     height: -webkit-max-content !important;
     height: -moz-max-content !important;
     height: max-content !important;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
+    width: 40%;
   }
   .block-first .col-5 {
     padding-top: 0 !important;
