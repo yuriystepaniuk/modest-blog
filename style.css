@@ -72,6 +72,9 @@ body {
     height: -webkit-max-content !important;
     height: -moz-max-content !important;
     height: max-content !important;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
   }
   .block-first .col-5 {
     padding-top: 0 !important;

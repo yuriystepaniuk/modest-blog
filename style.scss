@@ -51,11 +51,12 @@ body {
     .col-7 {
       justify-content: flex-start !important;
       height: max-content !important;
+      width: min-content;
     }
 
     .col-5 {
       padding-top: 0 !important;
-      // width: 95% !important;
+      // width: min-content;
       justify-content: flex-start !important;
     }
   }
