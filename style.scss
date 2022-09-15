@@ -10,9 +10,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
 
   .container {
     width: 768px !important;
@@ -37,6 +34,7 @@ body {
   }
 
   .slider {
+    // overflow-x: hidden;
     padding-left: 15px !important;
     padding-right: 15px !important;
     .col-7 {
@@ -47,6 +45,7 @@ body {
     }
   }
   .block-first {
+    // overflow-x: hidden;
     padding-left: 15px !important;
     padding-right: 15px !important;
     .display-flex {
