@@ -71,6 +71,7 @@ body {
     height: -moz-max-content !important;
     height: max-content !important;
     width: 40%;
+    margin-top: 0 !important;
   }
   .block-first .col-5 {
     padding-top: 0 !important;
