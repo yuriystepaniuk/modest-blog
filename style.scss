@@ -39,7 +39,7 @@ body {
       justify-content: flex-start !important;
       padding-top: 0 !important;
       padding-bottom: 0 !important;
-      margin-bottom: 30px;
+      width: min-content;
     }
   }
   .block-first {
@@ -184,7 +184,6 @@ header {
     padding-top: 200px;
     padding-bottom: 250px;
     flex-direction: column;
-    justify-content: flex-start;
   }
 }
 
