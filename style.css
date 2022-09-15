@@ -37,16 +37,18 @@ body {
   header .col-2 {
     display: none;
   }
-  header .box {
+  header .row {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start !important;
+    width: calc(100% - 30px);
   }
   .logo {
     margin-left: 15px;
   }
   .navigation ul {
     overflow-x: scroll;
+    width: 290px;
   }
   .slider {
     padding-left: 15px !important;
@@ -109,7 +111,7 @@ body {
 header {
   background-color: #1d2126;
 }
-header .box {
+header .row {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,7 +130,6 @@ header .box {
   justify-content: flex-start;
   padding: 0;
   margin: 0 auto;
-  width: 290px;
 }
 
 .navigation li {
