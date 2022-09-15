@@ -57,7 +57,6 @@ body {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     margin-bottom: 30px;
-    width: 90% !important;
   }
   .block-first {
     padding-left: 15px !important;
@@ -67,7 +66,6 @@ body {
     flex-direction: column;
   }
   .block-first .col-7 {
-    width: 95% !important;
     justify-content: flex-start !important;
     height: -webkit-max-content !important;
     height: -moz-max-content !important;
@@ -75,7 +73,6 @@ body {
   }
   .block-first .col-5 {
     padding-top: 0 !important;
-    width: 95% !important;
     justify-content: flex-start !important;
   }
 }
@@ -268,7 +265,7 @@ header .box {
   margin: unset;
 }
 .block-first .col-7 {
-  height: 612px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -311,7 +308,8 @@ header .box {
   background-image: url(images/be-sm.png);
 }
 .block-first .col-5 {
-  padding-top: 30px;
+  padding-top: 80px;
+  padding-bottom: 50px;
   font-family: "Open Sans";
   display: flex;
   flex-direction: column;
