@@ -26,6 +26,58 @@
 }
 
 @media (max-width: 550px) {
+  .container {
+    width: auto !important;
+    padding-left: 15px;
+  }
+  header .col-2 {
+    display: none;
+  }
+  header .row {
+    flex-direction: column;
+    align-items: flex-start !important;
+    height: auto !important;
+  }
+  .logo {
+    margin-left: 15px;
+  }
+  .navigation ul {
+    overflow-x: scroll;
+    width: 380px;
+  }
+  .slider {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .slider .col-7 {
+    width: calc(100% - 25px);
+    justify-content: flex-start !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  [class*=col-] {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    row-gap: 30px !important;
+  }
+  [class*=block-] {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  .block-first [class*=col-] {
+    width: calc(100% - 25px) !important;
+  }
+  .block-first .display-flex {
+    flex-direction: column;
+  }
+  .block-first .col-7 {
+    justify-content: flex-start !important;
+  }
+  .block-first .col-5 {
+    justify-content: flex-start !important;
+  }
   .block-second .display-flex {
     display: flex;
     flex-wrap: wrap;
@@ -38,7 +90,7 @@
     width: inherit;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 551px) and (max-width: 768px) {
   .container {
     width: auto !important;
     padding-left: 15px;
