@@ -29,10 +29,16 @@ body {
   width: 41.66667%;
 }
 
+.col-4 {
+  width: 33.33333%;
+}
+
 .container {
   display: block;
   max-width: 1170px;
   margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .row {
@@ -181,7 +187,7 @@ header {
 }
 
 [class*="block-"] {
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 100px;
   display: flex;
   flex-wrap: wrap;
@@ -237,8 +243,6 @@ header {
   }
 
   .col-5 {
-    // padding-top: 125px;
-    // padding-bottom: 50px;
     font-family: "Open Sans";
     display: flex;
     flex-direction: column;
@@ -303,7 +307,7 @@ header {
 .block-second {
   .display-flex {
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   [class*="col-"]:hover {
     cursor: pointer;
@@ -382,5 +386,88 @@ header {
       color: #989b9e;
       margin-bottom: 0;
     }
+  }
+}
+
+section {
+  background-color: #3a454d;
+  padding-top: 20px;
+  .display-flex {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .h2 p {
+    color: #fff;
+    span {
+      background-color: #4e5a62;
+    }
+    // [class*="col-"]
+  }
+  [class*="col-"] {
+    // display: block;
+    // background-image: url(images/sect-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 265px;
+    width: 360px;
+    span {
+      display: block;
+      height: 60px;
+      background-color: #292f36;
+      position: relative;
+      top: calc(100% - 60px);
+      text-align: center;
+      line-height: 60px;
+      color: #fff;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-family: "Quattrocento Sans";
+      visibility: hidden;
+    }
+  }
+  [class*="col-"]:hover {
+    span {
+      visibility: visible;
+      cursor: pointer;
+    }
+  }
+  .sect-1 {
+    background-image: url(images/sect-1.png);
+  }
+  .sect-2 {
+    background-image: url(images/sect-2.png);
+  }
+  .sect-3 {
+    background-image: url(images/sect-3.png);
+  }
+  .sect-4 {
+    background-image: url(images/sect-4.png);
+  }
+  .sect-5 {
+    background-image: url(images/sect-5.png);
+  }
+  .sect-6 {
+    background-image: url(images/sect-6.png);
+  }
+}
+
+.show-button {
+  text-align: center;
+  padding: 60px 0;
+  a {
+    width: 150px;
+    height: 45px;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    background: none;
+    color: #ccd0d7;
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans";
+    font-size: 14px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 45px;
+    text-decoration: none;
+    padding: 15px 30px;
   }
 }

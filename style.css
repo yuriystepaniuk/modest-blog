@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Quattrocento+Sans:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 .display-flex {
   display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  row-gap: 30px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  row-gap: 15px;
   justify-content: center;
 }
 
@@ -13,7 +13,7 @@
   text-align: top;
   font-family: "Quattrocento Sans";
   font-weight: 400;
-  color: #292f36 !important;
+  color: #292f36;
   display: inline-block;
 }
 .h2 span {
@@ -28,7 +28,7 @@
 
 @media (max-width: 550px) {
   .container {
-    width: auto !important;
+    width: auto;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -90,10 +90,18 @@
   .block-second .photo-link-inside {
     width: inherit;
   }
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .section [class*=col-] {
+    width: 100%;
+  }
 }
 @media (min-width: 551px) and (max-width: 768px) {
   .container {
-    width: auto !important;
+    width: auto;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -157,6 +165,13 @@
   .block-second .photo-link-inside {
     width: inherit;
   }
+  section .display-flex {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  section .display-flex [class*=col-] {
+    width: 45%;
+  }
 }
 * {
   box-sizing: border-box;
@@ -186,10 +201,16 @@ body {
   width: 41.66667%;
 }
 
+.col-4 {
+  width: 33.33333%;
+}
+
 .container {
   display: block;
   max-width: 1170px;
   margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .row {
@@ -353,7 +374,7 @@ header .display-flex {
 }
 
 [class*=block-] {
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 100px;
   display: flex;
   flex-wrap: wrap;
@@ -472,7 +493,7 @@ header .display-flex {
 
 .block-second .display-flex {
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .block-second [class*=col-]:hover {
   cursor: pointer;
@@ -551,4 +572,82 @@ header .display-flex {
 .photo-link a p {
   color: #989b9e;
   margin-bottom: 0;
+}
+
+section {
+  background-color: #3a454d;
+  padding-top: 20px;
+}
+section .display-flex {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section .h2 p {
+  color: #fff;
+}
+section .h2 p span {
+  background-color: #4e5a62;
+}
+section [class*=col-] {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 265px;
+  width: 360px;
+}
+section [class*=col-] span {
+  display: block;
+  height: 60px;
+  background-color: #292f36;
+  position: relative;
+  top: calc(100% - 60px);
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Quattrocento Sans";
+  visibility: hidden;
+}
+section [class*=col-]:hover span {
+  visibility: visible;
+  cursor: pointer;
+}
+section .sect-1 {
+  background-image: url(images/sect-1.png);
+}
+section .sect-2 {
+  background-image: url(images/sect-2.png);
+}
+section .sect-3 {
+  background-image: url(images/sect-3.png);
+}
+section .sect-4 {
+  background-image: url(images/sect-4.png);
+}
+section .sect-5 {
+  background-image: url(images/sect-5.png);
+}
+section .sect-6 {
+  background-image: url(images/sect-6.png);
+}
+
+.show-button {
+  text-align: center;
+  padding: 60px 0;
+}
+.show-button a {
+  width: 150px;
+  height: 45px;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  background: none;
+  color: #ccd0d7;
+  text-transform: uppercase;
+  font-family: "Quattrocento Sans";
+  font-size: 14px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 45px;
+  text-decoration: none;
+  padding: 15px 30px;
 }/*# sourceMappingURL=style.css.map */
