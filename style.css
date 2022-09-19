@@ -7,6 +7,9 @@
   justify-content: center;
 }
 
+.h2 {
+  margin-left: 15px;
+}
 .h2 p {
   font-size: 36px;
   text-transform: uppercase;
@@ -91,9 +94,7 @@
     width: inherit;
   }
   .section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-direction: column;
   }
   .section [class*=col-] {
     width: 100%;
@@ -190,7 +191,7 @@ body {
 }
 
 .col-3 {
-  width: 23%;
+  width: 25%;
 }
 
 .col-7 {
@@ -203,6 +204,11 @@ body {
 
 .col-4 {
   width: 33.33333%;
+}
+
+[class*=col-] {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .container {
@@ -491,10 +497,6 @@ header .display-flex {
   background-image: url(images/face4.png);
 }
 
-.block-second .display-flex {
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 .block-second [class*=col-]:hover {
   cursor: pointer;
 }
@@ -580,7 +582,7 @@ section {
 }
 section .display-flex {
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 section .h2 p {
   color: #fff;
@@ -593,6 +595,7 @@ section [class*=col-] {
   background-size: cover;
   height: 265px;
   width: 360px;
+  margin: 0;
 }
 section [class*=col-] span {
   display: block;
