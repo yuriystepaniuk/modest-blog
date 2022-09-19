@@ -33,7 +33,7 @@
   header .col-2 {
     display: none;
   }
-  header .row {
+  header .display-flex {
     flex-direction: column;
     align-items: flex-start !important;
     height: auto !important;
@@ -98,7 +98,7 @@
   header .col-2 {
     display: none;
   }
-  header .row {
+  header .display-flex {
     flex-direction: column;
     align-items: flex-start !important;
     height: auto !important;
@@ -197,11 +197,9 @@ body {
 header {
   background-color: #1d2126;
 }
-header .row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+header .display-flex {
   height: 80px;
+  align-items: center;
 }
 
 .navigation ul {
@@ -362,9 +360,11 @@ header .row {
 
 .block-first .col-7 {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-start !important;
 }
 .block-first .col-7 p {
   margin: 0 auto;

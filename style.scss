@@ -43,9 +43,9 @@ body {
 
 header {
   background-color: #1d2126;
-  .row {
-    @include display-flex;
+  .display-flex {
     height: 80px;
+    align-items: center;
   }
 }
 
@@ -191,10 +191,10 @@ header {
 
 .block-first {
   .col-7 {
-    display: flex;
+    @include display-flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-start !important;
     p {
       margin: 0 auto;
     }
