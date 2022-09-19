@@ -97,7 +97,7 @@
     flex-direction: column;
   }
   .section [class*=col-] {
-    width: 100%;
+    width: 360px;
   }
 }
 @media (min-width: 551px) and (max-width: 768px) {
@@ -161,7 +161,7 @@
     justify-content: flex-start;
   }
   .block-second .display-flex [class*=col-] {
-    width: 45%;
+    width: 260px;
   }
   .block-second .photo-link-inside {
     width: inherit;
@@ -171,7 +171,7 @@
     justify-content: space-evenly;
   }
   section .display-flex [class*=col-] {
-    width: 45%;
+    width: 360px;
   }
 }
 * {

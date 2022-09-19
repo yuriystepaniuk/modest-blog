@@ -310,6 +310,9 @@ header {
 }
 
 .block-second {
+  .display-flex {
+    // flex-wrap: wrap;
+  }
   [class*="col-"]:hover {
     cursor: pointer;
     .photo-link-inside {
