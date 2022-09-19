@@ -28,21 +28,22 @@
 @media (max-width: 768px) {
   .container {
     width: auto !important;
+    padding-left: 15px;
   }
   header .col-2 {
     display: none;
   }
   header .row {
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start !important;
+    height: auto !important;
   }
   .logo {
     margin-left: 15px;
   }
   .navigation ul {
     overflow-x: scroll;
-    width: 290px;
+    width: 380px;
   }
   .slider {
     padding-left: 15px !important;
@@ -58,13 +59,15 @@
     padding-top: 20px !important;
     padding-bottom: 20px !important;
     row-gap: 30px !important;
-    width: calc(100% - 25px) !important;
   }
   [class*=block-] {
     padding-left: 15px !important;
     padding-right: 15px !important;
     padding-top: 20px !important;
     padding-bottom: 20px !important;
+  }
+  .block-first [class*=col-] {
+    width: calc(100% - 25px) !important;
   }
   .block-first .display-flex {
     flex-direction: column;
@@ -74,6 +77,17 @@
   }
   .block-first .col-5 {
     justify-content: flex-start !important;
+  }
+  .block-second .display-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .block-second .display-flex [class*=col-] {
+    width: 45%;
+  }
+  .block-second .photo-link-inside {
+    width: inherit;
   }
 }
 * {

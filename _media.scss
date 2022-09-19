@@ -1,6 +1,7 @@
 @media (max-width: 768px) {
   .container {
     width: auto !important;
+    padding-left: 15px;
   }
 
   header {
@@ -11,9 +12,10 @@
 
   header {
     .row {
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
       flex-direction: column;
       align-items: flex-start !important;
+      height: auto !important;
     }
   }
 
@@ -23,11 +25,10 @@
 
   .navigation ul {
     overflow-x: scroll;
-    width: 290px;
+    width: 380px;
   }
 
   .slider {
-    // overflow-x: hidden;
     padding-left: 15px !important;
     padding-right: 15px !important;
     .col-7 {
@@ -41,9 +42,8 @@
   [class*="col-"] {
     padding-top: 20px !important;
     padding-bottom: 20px !important;
-    // column-gap: 20px !important;
     row-gap: 30px !important;
-    width: calc(100% - 25px) !important;
+    // width: calc(100% - 25px) !important;
   }
 
   [class*="block-"] {
@@ -54,21 +54,40 @@
   }
 
   .block-first {
+    [class*="col-"] {
+      // padding-top: 20px !important;
+      // padding-bottom: 20px !important;
+      // row-gap: 30px !important;
+      width: calc(100% - 25px) !important;
+    }
+    // [class*="block-"] {
+    //   padding-left: 15px !important;
+    //   padding-right: 15px !important;
+    //   padding-top: 20px !important;
+    //   padding-bottom: 20px !important;
+    // }
     .display-flex {
       flex-direction: column;
     }
     .col-7 {
       justify-content: flex-start !important;
-      // height: max-content !important;
-      // width: calc(100% - 25px);
-      // margin-top: 0 !important;
     }
-
     .col-5 {
-      // padding-top: 0 !important;
-      // width: calc(100% - 25px);
-      // width: min-content;
       justify-content: flex-start !important;
+    }
+  }
+
+  .block-second {
+    .display-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      [class*="col-"] {
+        width: 45%;
+      }
+    }
+    .photo-link-inside {
+      width: inherit;
     }
   }
 }
