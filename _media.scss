@@ -33,7 +33,7 @@
     padding-left: 15px !important;
     padding-right: 15px !important;
     .col-7 {
-      width: calc(100% - 25px);
+      width: calc(100% - 15px);
       justify-content: flex-start !important;
       padding-top: 0 !important;
       padding-bottom: 0 !important;
@@ -44,6 +44,7 @@
     padding-top: 20px !important;
     padding-bottom: 20px !important;
     row-gap: 30px !important;
+    width: 100% !important;
     // width: calc(100% - 25px) !important;
   }
 
