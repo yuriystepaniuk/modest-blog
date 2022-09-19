@@ -4,7 +4,7 @@
   -moz-column-gap: 15px;
        column-gap: 15px;
   row-gap: 15px;
-  justify-content: center;
+  padding-left: 15px;
 }
 
 .h2 {
@@ -39,6 +39,7 @@
     display: none;
   }
   header .display-flex {
+    padding-left: 0;
     flex-direction: column;
     align-items: flex-start !important;
     height: auto !important;
@@ -50,7 +51,6 @@
     overflow-x: scroll;
   }
   .slider {
-    padding-left: 15px !important;
     padding-right: 15px !important;
   }
   .slider .col-7 {
@@ -63,10 +63,9 @@
     padding-top: 20px !important;
     padding-bottom: 20px !important;
     row-gap: 30px !important;
-    width: 100% !important;
+    width: 90% !important;
   }
   [class*=block-] {
-    padding-left: 15px !important;
     padding-top: 20px !important;
     padding-bottom: 20px !important;
   }
@@ -99,11 +98,13 @@
   .section [class*=col-] {
     width: 360px;
   }
+  [class*=col-] span {
+    top: calc(100% - 40px) !important;
+  }
 }
 @media (min-width: 551px) and (max-width: 768px) {
   .container {
     width: auto;
-    padding-left: 15px;
     padding-right: 15px;
   }
   header .col-2 {
@@ -116,6 +117,7 @@
     flex-direction: column;
     align-items: flex-start !important;
     height: auto !important;
+    padding-left: 0 !important;
   }
   .logo {
     margin-left: 15px;
@@ -124,7 +126,6 @@
     overflow-x: scroll;
   }
   .slider {
-    padding-left: 15px !important;
     padding-right: 15px !important;
   }
   .slider .col-7 {
@@ -139,21 +140,15 @@
     row-gap: 30px !important;
   }
   [class*=block-] {
-    padding-left: 15px !important;
     padding-top: 20px !important;
     padding-bottom: 20px !important;
   }
   .block-first [class*=col-] {
     width: calc(100% - 25px) !important;
+    justify-content: flex-start !important;
   }
   .block-first .display-flex {
     flex-direction: column;
-  }
-  .block-first .col-7 {
-    justify-content: flex-start !important;
-  }
-  .block-first .col-5 {
-    justify-content: flex-start !important;
   }
   .block-second .display-flex {
     display: flex;
@@ -168,10 +163,12 @@
   }
   section .display-flex {
     flex-wrap: wrap;
-    justify-content: space-evenly;
   }
   section .display-flex [class*=col-] {
     width: 360px;
+  }
+  [class*=col-] span {
+    top: calc(100% - 40px) !important;
   }
 }
 * {
@@ -204,11 +201,6 @@ body {
 
 .col-4 {
   width: 33.33333%;
-}
-
-[class*=col-] {
-  margin-left: 15px;
-  margin-right: 15px;
 }
 
 .container {
@@ -329,6 +321,7 @@ header .display-flex {
   display: flex;
   padding-top: 200px;
   padding-bottom: 250px;
+  padding-left: 15px;
   flex-direction: column;
   width: 95%;
 }
@@ -582,7 +575,6 @@ section {
 }
 section .display-flex {
   flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 section .h2 p {
   color: #fff;
