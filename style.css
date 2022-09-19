@@ -25,6 +25,19 @@
   background-color: #c8cdd0;
 }
 
+@media (max-width: 320px) {
+  .block-second .display-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .block-second .display-flex [class*=col-] {
+    width: 100%;
+  }
+  .block-second .photo-link-inside {
+    width: inherit;
+  }
+}
 @media (max-width: 768px) {
   .container {
     width: auto !important;
