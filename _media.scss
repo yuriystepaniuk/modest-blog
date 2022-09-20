@@ -81,6 +81,8 @@
     // }
     .display-flex {
       flex-direction: column;
+      align-items: center;
+      padding-left: 0 !important;
     }
     .col-7 {
       align-items: center !important;
@@ -165,16 +167,15 @@
   }
 
   .slider {
-    padding-right: 15px !important;
     p {
       text-align: justify;
     }
     .col-7 {
+      width: 100% !important;
       align-items: center;
-      width: calc(100% - 25px);
-      justify-content: flex-start !important;
       padding-top: 0 !important;
       padding-bottom: 0 !important;
+      padding-right: 15px;
     }
   }
 
@@ -204,7 +205,7 @@
 
   .block-first {
     [class*="col-"] {
-      width: calc(100% - 25px) !important;
+      width: 100% !important;
       justify-content: center;
       align-items: center !important;
     }
@@ -239,7 +240,7 @@
       padding-left: 0;
       flex-wrap: wrap;
       // flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: center;
       [class*="col-"] {
         width: 360px;
       }

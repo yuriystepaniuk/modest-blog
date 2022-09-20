@@ -94,6 +94,8 @@
   }
   .block-first .display-flex {
     flex-direction: column;
+    align-items: center;
+    padding-left: 0 !important;
   }
   .block-first .col-7 {
     align-items: center !important;
@@ -158,18 +160,15 @@
     overflow-x: scroll;
     justify-content: center !important;
   }
-  .slider {
-    padding-right: 15px !important;
-  }
   .slider p {
     text-align: justify;
   }
   .slider .col-7 {
+    width: 100% !important;
     align-items: center;
-    width: calc(100% - 25px);
-    justify-content: flex-start !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+    padding-right: 15px;
   }
   .h2 {
     text-align: center;
@@ -193,7 +192,7 @@
     padding-bottom: 20px !important;
   }
   .block-first [class*=col-] {
-    width: calc(100% - 25px) !important;
+    width: 100% !important;
     justify-content: center;
     align-items: center !important;
   }
@@ -221,7 +220,7 @@
   section .display-flex {
     padding-left: 0;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
   }
   section .display-flex [class*=col-] {
     width: 360px;
