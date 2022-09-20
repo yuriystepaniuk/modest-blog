@@ -30,6 +30,11 @@
   background-color: #c8cdd0;
 }
 
+.block-second .photo {
+  padding-left: 0;
+  justify-content: center;
+}
+
 @media (max-width: 550px) {
   .container {
     width: auto;
@@ -124,12 +129,11 @@
   }
   section [class*=col-] {
     max-width: 360px !important;
-    /* height: 265px !important; */
     background-size: contain;
   }
   [class*=sect-] a {
     position: relative;
-    top: 35vh !important;
+    top: calc(100% - 40px) !important;
   }
 }
 @media (min-width: 551px) and (max-width: 768px) {

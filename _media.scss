@@ -120,14 +120,13 @@
     }
     [class*="col-"] {
       max-width: 360px !important;
-      /* height: 265px !important; */
       background-size: contain;
     }
   }
   [class*="sect-"] {
     a {
       position: relative;
-      top: 35vh !important;
+      top: calc(100% - 40px) !important;
     }
   }
 }
