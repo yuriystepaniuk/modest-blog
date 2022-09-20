@@ -129,7 +129,7 @@
   }
   [class*=sect-] a {
     position: relative;
-    top: 58vh !important;
+    top: 35vh !important;
   }
 }
 @media (min-width: 551px) and (max-width: 768px) {
