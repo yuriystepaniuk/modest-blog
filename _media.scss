@@ -119,7 +119,7 @@
       justify-content: center;
     }
     [class*="col-"] {
-      width: 360px !important;
+      max-width: 360px !important;
       /* height: 265px !important; */
       background-size: contain;
     }
@@ -246,7 +246,7 @@
   [class*="sect-"] {
     a {
       position: relative;
-      top: calc(100% - 60px);
+      top: calc(100% - 40px) !important;
     }
   }
 }
