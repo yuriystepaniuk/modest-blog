@@ -25,13 +25,10 @@
 
   .navigation ul {
     overflow-x: scroll;
-    // width: auto !important;
-    // width: 365px;
+    margin-left: 15px !important;
   }
 
   .slider {
-    // padding-left: 15px !important;
-    // padding-right: 15px !important;
     .col-7 {
       width: 100% !important;
       align-items: center;
@@ -107,10 +104,13 @@
       width: inherit;
     }
   }
-  section {
-    .h2 {
+  .h2 {
+    text-align: center;
+    p {
       text-align: center;
     }
+  }
+  section {
     .display-flex {
       padding-left: 0;
       flex-wrap: wrap;
@@ -127,7 +127,7 @@
   [class*="sect-"] {
     a {
       position: relative;
-      top: calc(100% - 40px) !important;
+      top: 58vh !important;
     }
   }
 }
@@ -181,6 +181,9 @@
 
   .h2 {
     text-align: center;
+    p {
+      text-align: center;
+    }
   }
 
   [class*="col-"] {

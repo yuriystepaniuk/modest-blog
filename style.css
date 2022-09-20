@@ -9,6 +9,7 @@
 
 .h2 {
   margin-left: 15px;
+  margin-right: 15px;
 }
 .h2 p {
   font-size: 36px;
@@ -50,6 +51,7 @@
   }
   .navigation ul {
     overflow-x: scroll;
+    margin-left: 15px !important;
   }
   .slider .col-7 {
     width: 100% !important;
@@ -107,7 +109,10 @@
   .block-second .photo-link-inside {
     width: inherit;
   }
-  section .h2 {
+  .h2 {
+    text-align: center;
+  }
+  .h2 p {
     text-align: center;
   }
   section .display-flex {
@@ -124,7 +129,7 @@
   }
   [class*=sect-] a {
     position: relative;
-    top: calc(100% - 40px) !important;
+    top: 58vh !important;
   }
 }
 @media (min-width: 551px) and (max-width: 768px) {
@@ -163,6 +168,9 @@
     padding-bottom: 0 !important;
   }
   .h2 {
+    text-align: center;
+  }
+  .h2 p {
     text-align: center;
   }
   [class*=col-] {
