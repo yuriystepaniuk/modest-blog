@@ -207,7 +207,7 @@ header {
     @include display-flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start !important;
+    align-items: flex-start;
     p {
       margin: 0 auto;
     }
