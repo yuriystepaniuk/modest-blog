@@ -406,6 +406,12 @@ section {
       background-color: #4e5a62;
     }
   }
+  [class*="sect-"] {
+    a {
+      position: relative;
+      top: calc(100% - 60px);
+    }
+  }
   [class*="col-"] {
     background-repeat: no-repeat;
     background-size: cover;
@@ -416,8 +422,8 @@ section {
       display: block;
       height: 60px;
       background-color: #292f36;
-      position: relative;
-      top: calc(100% - 60px);
+      // position: relative;
+      // top: calc(100% - 60px);
       text-align: center;
       line-height: 60px;
       color: #fff;

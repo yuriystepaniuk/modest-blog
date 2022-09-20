@@ -111,15 +111,19 @@
     text-align: center;
   }
   section .display-flex {
+    padding-left: 0;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   section [class*=col-] {
-    width: 360px;
+    width: 360px !important;
+    /* height: 265px !important; */
+    background-size: contain;
   }
-  [class*=col-] span {
+  [class*=sect-] a {
+    position: relative;
     top: calc(100% - 40px) !important;
   }
 }
@@ -203,14 +207,16 @@
     width: inherit;
   }
   section .display-flex {
+    padding-left: 0;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
   section .display-flex [class*=col-] {
     width: 360px;
   }
-  [class*=col-] span {
-    top: calc(100% - 40px) !important;
+  [class*=sect-] a {
+    position: relative;
+    top: calc(100% - 60px);
   }
 }
 * {
@@ -624,6 +630,10 @@ section .h2 p {
 section .h2 p span {
   background-color: #4e5a62;
 }
+section [class*=sect-] a {
+  position: relative;
+  top: calc(100% - 60px);
+}
 section [class*=col-] {
   background-repeat: no-repeat;
   background-size: cover;
@@ -635,8 +645,6 @@ section [class*=col-] span {
   display: block;
   height: 60px;
   background-color: #292f36;
-  position: relative;
-  top: calc(100% - 60px);
   text-align: center;
   line-height: 60px;
   color: #fff;
