@@ -268,7 +268,7 @@ body {
 
 .container {
   display: block;
-  max-width: 1170px;
+  width: 1170px;
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
@@ -822,10 +822,113 @@ section .sect-6 {
   color: #ffffff;
 }
 
+.contacts {
+  margin-bottom: -60px;
+}
 .contacts h3 {
+  font-weight: 20px;
+  margin-left: 10px;
   padding-top: 30px;
   text-transform: uppercase;
   font-family: "Quattrocento Sans";
   color: #292f36;
   font-weight: 300;
+}
+.contacts p {
+  color: #dde1e4;
+}
+.contacts form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  height: 400px;
+  position: relative;
+  top: -130px;
+  z-index: 10;
+  background-color: #fff;
+  padding: 30px;
+}
+.contacts form .display-flex {
+  row-gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-between;
+}
+.contacts form input,
+.contacts form textarea {
+  display: block;
+  all: unset;
+  background-color: #eaeef1;
+  border-color: #eaeef1;
+  border-radius: 3px;
+}
+.contacts form label {
+  padding-left: 10px;
+  width: 48%;
+  font-family: "Quattrocento Sans";
+  color: #8d8f92;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.contacts form .form-button {
+  margin-top: 20px;
+}
+.contacts form input {
+  height: 45px;
+  width: 48%;
+  margin-bottom: 10px;
+}
+.contacts textarea {
+  width: 100%;
+  height: 160px;
+}
+.contacts button {
+  all: unset;
+  height: 45px;
+  width: 150px;
+  background-color: #23b7a4;
+  border-color: #23b7a4;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Quattrocento Sans";
+  font-size: 14px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  background-color: #3a464d;
+  padding: 24px 0;
+  color: #fff;
+}
+footer [class*=footer-social-] {
+  display: flex;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+}
+footer .footer-social {
+  display: flex;
+  align-items: center;
+}
+footer .display-flex {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-social-1 {
+  background-image: url(images/twitter-lg.png);
+}
+footer .footer-social-2 {
+  background-image: url(images/fb-lg.png);
+}
+footer .footer-social-3 {
+  background-image: url(images/skype.png);
+}
+footer .footer-social-4 {
+  background-image: url(images/be-lg.png);
+}
+footer .footer-social-5 {
+  background-image: url(images/link-lg.png);
 }/*# sourceMappingURL=style.css.map */
