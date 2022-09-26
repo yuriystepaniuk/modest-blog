@@ -386,7 +386,6 @@ header .display-flex {
   padding-bottom: 250px;
   padding-left: 15px;
   flex-direction: column;
-  width: 95%;
 }
 
 .slider-button {
@@ -451,7 +450,7 @@ header .display-flex {
 .block-first p,
 .block-second p,
 .block-third p {
-  color: #dde1e4;
+  color: #8d8f92;
 }
 
 .block-first .col-7 {
@@ -835,13 +834,12 @@ section .sect-6 {
   font-weight: 300;
 }
 .contacts p {
-  color: #dde1e4;
+  color: #8d8f92;
 }
 .contacts form {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-  height: 400px;
   position: relative;
   top: -130px;
   z-index: 10;
@@ -857,11 +855,17 @@ section .sect-6 {
 }
 .contacts form input,
 .contacts form textarea {
+  box-sizing: border-box !important;
   display: block;
   all: unset;
   background-color: #eaeef1;
   border-color: #eaeef1;
   border-radius: 3px;
+  padding: 15px;
+  width: 100%;
+  height: 160px;
+  font-family: "Quattrocento Sans";
+  color: #8d8f92;
 }
 .contacts form label {
   padding-left: 10px;
@@ -875,16 +879,14 @@ section .sect-6 {
   margin-top: 20px;
 }
 .contacts form input {
+  padding: 0 15px;
   height: 45px;
   width: 48%;
   margin-bottom: 10px;
+  font-family: "Quattrocento Sans";
+  color: #8d8f92;
 }
-.contacts textarea {
-  width: 100%;
-  height: 160px;
-}
-.contacts button {
-  all: unset;
+.contacts .form-button {
   height: 45px;
   width: 150px;
   background-color: #23b7a4;
@@ -895,6 +897,15 @@ section .sect-6 {
   font-family: "Quattrocento Sans";
   font-size: 14px;
   text-align: center;
+  line-height: 45px;
+}
+.contacts .form-button a {
+  height: 45px;
+  width: 150px;
+  display: block;
+}
+.contacts .form-button :hover {
+  cursor: pointer;
 }
 
 footer {
@@ -931,4 +942,11 @@ footer .footer-social-4 {
 }
 footer .footer-social-5 {
   background-image: url(images/link-lg.png);
+}
+
+.map {
+  width: 1900px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }/*# sourceMappingURL=style.css.map */
