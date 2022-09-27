@@ -51,6 +51,9 @@
   .col-4 {
     width: 33.33333%;
   }
+  .future-text {
+    padding-right: 15px;
+  }
   .container {
     display: block;
     width: 1170px;
