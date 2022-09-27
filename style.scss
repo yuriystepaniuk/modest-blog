@@ -17,39 +17,6 @@ body {
   width: 16.66667%;
 }
 
-.col-3 {
-  width: 25%;
-}
-
-.col-7 {
-  width: 58.33333%;
-}
-
-.col-5 {
-  width: 41.66667%;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-4 {
-  width: 33.33333%;
-}
-
-// [class*="col-"] {
-// margin-left: 15px;
-// margin-right: 15px;
-// }
-
-.container {
-  display: block;
-  width: 1170px;
-  margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
 .row {
   margin-left: -15px;
   margin-right: -15px;
@@ -542,18 +509,21 @@ section {
 
 .feautures-picture {
   //   display: block;
-  width: 360px;
+  // width: 360px;
   height: 240px;
   margin-bottom: 40px;
   //   background-color: #23b7a4;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .future-text {
   display: block;
-  width: 360px;
+  // width: 360px;
   font-weight: 16px;
-  color: #dcdfe1;
   padding-bottom: calc(120px - 16px);
+  font-weight: 400;
+  color: #dcdfe1;
 }
 
 .feautures-picture-1 {
@@ -566,23 +536,26 @@ section {
   background-image: url(images/futures-3.png);
 }
 
-.futures {
+.features {
   padding-top: 40px;
   background-color: #3a454d;
+  font-family: "Quattrocento Sans";
   .h2-light {
-    color: #fff;
+    p {
+      color: #fff;
+    }
     span {
       background-color: #4e5a62;
     }
   }
   h3 {
+    // font-family: "Quattrocento Sans";
     font-weight: 400;
     margin: 15px auto;
-    font-family: "Quattrocento Sans";
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #fff;
   }
 }
 
@@ -632,10 +605,11 @@ section {
       height: 160px;
       font-family: "Quattrocento Sans";
       color: #8d8f92;
+      text-align: left;
     }
     label {
       padding-left: 10px;
-      width: 48%;
+      width: 100%;
       font-family: "Quattrocento Sans";
       color: #8d8f92;
       text-transform: uppercase;
@@ -649,7 +623,7 @@ section {
     input {
       padding: 0 15px;
       height: 45px;
-      width: 48%;
+      width: 100%;
       margin-bottom: 10px;
       font-family: "Quattrocento Sans";
       color: #8d8f92;
@@ -680,6 +654,7 @@ section {
 }
 
 footer {
+  font-family: "Open Sans";
   display: flex;
   background-color: #3a464d;
   padding: 24px 0;
@@ -717,8 +692,8 @@ footer {
   }
 }
 
-.map {
-  width: 1900px;
+iframe {
+  width: 100%;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
