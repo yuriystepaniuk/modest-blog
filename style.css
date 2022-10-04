@@ -35,7 +35,7 @@
   justify-content: center;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   .col-3 {
     width: 25%;
   }
@@ -62,7 +62,7 @@
     padding-left: 15px;
   }
 }
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 1024px) {
   .container {
     width: 100%;
     padding-left: 15px;
@@ -80,10 +80,10 @@
   header .col-4 {
     width: 100%;
   }
-  header .display-flex {
-    padding-left: 0;
-    flex-direction: column;
-    height: auto !important;
+  header .display-flex .nav-mobile-menu {
+    position: absolute;
+    right: 15px;
+    top: 15px;
   }
   .features .display-flex {
     flex-direction: column;
@@ -222,7 +222,6 @@
   [class*=col-] {
     padding-top: 20px !important;
     padding-bottom: 20px !important;
-    row-gap: 30px !important;
   }
   [class*=block-] {
     display: flex;
